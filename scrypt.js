@@ -58,8 +58,46 @@ function convertionChoixOrdi(choix){
 
 //Comparer les deux choix pour voir qui gagne la manche 
 
-//role: comparer les deux choix
+//role: comparer  les deux choix et annoncer le vainqueur 
 //parametre: les deux choix
 //return: le vainqueur
 
+function comparer(utilisateur, ordinateur){
+    //si utilisateur a fait pierre et que ordinateur a fait papier alors ordinateur gagne
+    if(utilisateur=="pierre" && ordinateur=="papier"){
+        alert("Vous avez perdu !")
+    }
+        //sinon si utilisateur a fait pierre et ordinateur à fait ciseaux alors utilisateur gagne
+    else if(utilisateur=="pierre" && ordinateur=="ciseaux"){
+        alert(`Vous avez gagné !`)
+    }
+
+     //sinon si utilisateur a fait papier et que ordinateur a fait pierre alors utilisateur gagne
+    else if(utilisateur=="papier" && ordinateur=="pierre"){
+        alert(`Vous avez perdu !`)
+    }
+
+     //sinon si utilisateur a fait papier et que ordinateur a fait ciseaux alors ordinateur gagne 
+    else if(utilisateur=="papier" && ordinateur=="ciseaux"){
+        alert(`Vous avez gagné !`)
+    }
+
+     //sinon si utilisateur a fait ciseaux et que ordinateur a fait pierre alors ordinateur gagne
+    else if(utilisateur=="ciseaux" && ordinateur=="pierre"){
+        alert(`Vous avez perdu !`)
+    }
+
+     // sinon si utilisateur a fait ciseaux et que ordinateur a fait papier alors utilisateur gagne 
+    else if(utilisateur=="ciseaux" && ordinateur=="papier"){
+        alert(`Vous avez gagné !`)
+    }
+
+     //sinon match nul
+    else{
+        alert(`Match nul !`)
+    }
+    
+}
+
+//scenario
 
